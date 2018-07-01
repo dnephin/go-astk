@@ -50,7 +50,9 @@ job=watch:
   use: builder
   mounts: [source]
   interactive: true
-  command: filewatcher -x 'vendor' go test -v './${dir}'
+  command: |
+      filewatcher -x vendor gotestsum -- -test.timeout 10s
+  env: ['GOTESTSUM_FORMAT=short-verbose']
 
 job=test-unit:
   use: builder
