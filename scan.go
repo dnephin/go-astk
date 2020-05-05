@@ -9,6 +9,12 @@ import (
 
 type set map[string]struct{}
 
+func (s set) extend(o set) {
+	for k, v := range o {
+		s[k] = v
+	}
+}
+
 var empty struct{}
 
 // Scan a package and return a list of all the exported symbols in pkg which
