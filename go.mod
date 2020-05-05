@@ -1,4 +1,4 @@
-module github.com/dnephin/ast-strip
+module github.com/dnephin/astprune
 
 go 1.14
 

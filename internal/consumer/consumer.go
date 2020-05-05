@@ -21,10 +21,10 @@ type foo struct {
 var symbolInPkgVar *target.TypeSymbol5
 
 func symbolInFunctionBody() {
-	fmt.Println(target.VarSymbol)
+	fmt.Println(target.VarSymbol1)
 	target.FuncSymbol()
 
-	_ = target.VarSymbol
+	_ = target.VarSymbol2
 	_ = target.ConstSymbol
 
 	var _ target.TypeSymbol8
