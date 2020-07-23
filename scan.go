@@ -67,3 +67,7 @@ func importsIndex(specs []*ast.ImportSpec, pkgImports map[string]*packages.Packa
 func unquote(v string) string {
 	return strings.Trim(v, `"`)
 }
+
+func extrapolate(symbols set) set {
+	return nil
+}
